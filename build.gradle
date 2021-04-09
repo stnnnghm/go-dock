@@ -1,5 +1,9 @@
-// use gradelw to run these two tasks (build / run Docker container)
-// using Palantir Gradle plugin
+/*
+/ use gradelw to run these two tasks (build / run Docker container)
+/ using Palantir Gradle plugin
+/ ex. ./gradelw docker
+/ ex. ./gradelw dockerRun
+*/
 plugins {
     // builds the docker image
     id "com.palantir.docker" version "0.22.1"
