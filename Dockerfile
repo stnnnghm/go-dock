@@ -1,4 +1,4 @@
-From golang:latest
+FROM golang:latest
 
 COPY main.go .
 
