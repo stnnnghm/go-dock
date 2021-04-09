@@ -1,0 +1,30 @@
+// use gradelw to run these two tasks (build / run Docker container)
+// using Palantir Gradle plugin
+plugins {
+    // builds the docker image
+    id "com.palantir.docker" version "0.22.1"
+    // runs the docker image as a container
+    id "com.palantir.docker-run" version "0.22.1"
+}
+// this app version
+version '0.1.0'
+
+// first task called 'docker' specifies name of project and files 
+// to be included w/ image
+docker {
+    name "${project.name}:${project.version}"
+    files 'main.go'
+}
+
+// final task called 'dockerRun'
+// defines name of Docker image to run, ports to use
+// where the first port matches the port the container will run on
+// second port is what the internal application w/in Docker container 
+// is running
+// 'clean true' auto deletes the container once it stops running
+dockerRun {
+    name "${project.name}"
+    image "${project.name}:${project.version}"
+    ports '8081:8080'
+    clean true
+}
