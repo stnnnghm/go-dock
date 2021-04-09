@@ -17,7 +17,7 @@ version '0.1.0'
 // to be included w/ image
 docker {
     name "${project.name}:${project.version}"
-    files 'main.go'
+    files 'server.go'
 }
 
 // final task called 'dockerRun'

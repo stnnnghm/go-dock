@@ -1,7 +1,7 @@
 FROM golang:latest
 
-COPY main.go .
+COPY server.go .
 
-RUN go build main.go
+RUN go build server.go
 
-CMD ["./main"]
+CMD ["./server"]
