@@ -2,7 +2,7 @@
 
 ## go-dock is a simple application that uses Gradle to build and run a Docker container with an instance of a Golang web browser hosting a simple joke about me!
 
-![source: https://hackernoon.com/hn-images/1*JfSp7LWmVE1nj15IrxWSWQ.png](https://hackernoon.com/hn-images/1*JfSp7LWmVE1nj15IrxWSWQ.png)
+![Docker Gopher](https://hackernoon.com/hn-images/1*JfSp7LWmVE1nj15IrxWSWQ.png "source: https://hackernoon.com/hn-images/1*JfSp7LWmVE1nj15IrxWSWQ.png")
 
 ### How It Works
 
