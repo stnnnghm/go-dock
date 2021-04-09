@@ -16,4 +16,4 @@ To run the application enter the following commands in your terminal:
 1. `./gradlew docker`
 2. `.gradlew dockerRun`
    The application will build and run a docker container with an instance of the webserver on port :8081.
-3. `curl localhost:8081` or use your web browser to navigate to `localhost:8081` to see the joke about Stevan!
+3. `curl localhost:8081` or use your web browser to navigate to `localhost:8081` to see a joke!
